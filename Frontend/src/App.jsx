@@ -1,8 +1,15 @@
-import React from "react";
-import Home from "./page/Home";
+import React from 'react'
+import Home from "./page/Home"
+import Navbar from './common/Navbar'
 
 function App() {
-  return <Home />;
+  return (
+    <>
+    <Navbar/>
+    <Home/>
+    </>
+    
+  )
 }
 
-export default App;
+export default App
