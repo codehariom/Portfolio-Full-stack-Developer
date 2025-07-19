@@ -25,7 +25,7 @@ function Navbar() {
             <li>Contact Us</li>
           </ul>
 
-          <button className=" py-2 bg-black text-xl  tracking-wide rounded-md text-white px-10">
+          <button className=" py-2 bg-white text-xl  tracking-wide rounded-md text-black px-10">
             <a href="./public/Hariom-Resume.pdf" download>
               Hire Me
             </a>
