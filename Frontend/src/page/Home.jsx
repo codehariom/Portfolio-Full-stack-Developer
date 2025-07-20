@@ -21,7 +21,7 @@ function Home() {
               />
             </span>
           </h1>
-          <p className=" text-white text-xl tracking-wide leading-8">I'm a passionate Full-Stack Web Developer <br/> with a knack for turning innovative ideas <br/> into functional, scalable, and intuitive digital products.</p>
+          <p className=" text-white text-xl tracking-wide leading-8">I'm a passionate <span className=" font-bold">MERN</span> Full-Stack Web Developer <br/> with a knack for turning innovative ideas <br/> into functional, scalable, and intuitive digital products.</p>
           <div className=" flex mt-15 space-x-15" >
             <div className=" flex items-center gap-5  ">
                 <FaLinkedin size={35} color="white"/><a href= "https://www.linkedin.com/in/realhariom/ " target="_blank" className="text-white text-xl  tracking-[2.5px] ">LinkedIn</a>

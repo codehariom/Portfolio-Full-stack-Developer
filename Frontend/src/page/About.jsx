@@ -48,10 +48,10 @@ function About() {
             </div>
           </div>
           <div className="flex-row max-w-full text-center  sm:flex gap-5 mt-10 ">
-            <p className=" bg-white py-2 px-6 rounded-lg font-semibold hover:outline-4 hover:outline-white hover:bg-green hover:text-white">Frontend Tech</p>
-            <p className=" bg-white py-2 px-6 rounded-lg font-semibold hover:outline-4 hover:outline-white hover:bg-green hover:text-white">Backend Tech</p>
-            <p className=" bg-white py-2 px-6 rounded-lg font-semibold hover:outline-4 hover:outline-white hover:bg-green hover:text-white">Cloud Service</p>
-            <p className=" bg-white py-2 px-6 rounded-lg font-semibold hover:outline-4 hover:outline-white hover:bg-green hover:text-white">UI/UX Design</p>
+            <p className=" bg-white transition-all duration-200 py-2 px-6 rounded-lg font-semibold hover:outline-4 hover:outline-white  hover:bg-green hover:text-white">Frontend Tech</p>
+            <p className=" bg-white transition-all duration-200 py-2 px-6 rounded-lg font-semibold hover:outline-4 hover:outline-white hover:bg-green hover:text-white">Backend Tech</p>
+            <p className=" bg-white  transition-all duration-200 py-2 px-6 rounded-lg font-semibold hover:outline-4 hover:outline-white hover:bg-green hover:text-white">Cloud Service</p>
+            <p className=" bg-white transition-all duration-200 py-2 px-6 rounded-lg font-semibold hover:outline-4 hover:outline-white hover:bg-green hover:text-white">UI/UX Design</p>
           </div>
         </div>
       </div>
