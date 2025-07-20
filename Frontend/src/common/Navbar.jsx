@@ -40,7 +40,7 @@ function Navbar() {
             </span>
           </h1>
 
-          <ul className=" font-semibold text-2xl text-white flex space-x-14">
+          <ul className=" font-semibold text-2xl text-white flex cursor-pointer space-x-14">
             <li>Home</li>
             <li>About Me</li>
             <li>Skills</li>
@@ -50,7 +50,7 @@ function Navbar() {
 
           <button className=" py-2 bg-white text-xl  tracking-wide  rounded-md text-black px-10">
             <a href="./public/Hariom-Resume.pdf" download>
-              Hire Me
+              Resume
             </a>
           </button>
         </nav>

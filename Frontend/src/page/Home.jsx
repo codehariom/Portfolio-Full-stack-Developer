@@ -10,7 +10,7 @@ function Home() {
         <div className=" text-left space-x-20 ">
           <p className=" text-white  text-xl mb-5 font-medium tracking-wider"> Hi, I'm </p>
           <h1 className="text-2xl mb-7 text-white md:text-4xl">
-            Hariom-
+            Hariom
             <span className=" font-semibold max-w-fit">
               <ReactTyped
                 strings={["-Full Stack Developer ", "-Backend Developer"]}
