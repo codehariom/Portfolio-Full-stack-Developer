@@ -25,10 +25,10 @@ function Navbar() {
   return (
     <div
       className={`fixed px-20 py-4 top-0 left-0 w-full z-50 transition-all duration-200 ${
-        isScrolled ? "bg-green shadow-xl" : "bg-transparent"
+        isScrolled ? "bg-green shadow-xl" : "bg-transparent "
       }`}
     >
-      <div className=" place-content-center-center ">
+      <div className=" place-content-center-center  ">
         <nav className=" items-center justify-between flex">
           <h1 className=" flex text-2xl  text-white font-semibold items-center">
             <span>
