@@ -35,7 +35,7 @@ function Home() {
           </div>
         </div>
         <div className=" p-10 ">
-          <img src={img} alt="" className="  border-10 border-white  object-cover size-150 rounded-full " />
+          <img src={img} alt="" className="  border-10 border-white  object-cover size-100  rounded-full " />
         </div>
       </div>
     </div>

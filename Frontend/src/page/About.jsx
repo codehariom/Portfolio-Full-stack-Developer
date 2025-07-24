@@ -9,7 +9,7 @@ function About() {
           <img
             src={AboutImg}
             alt=""
-            className="  border-10  border-white rounded-full object-cover size-150"
+            className=" hidden md:block  border-10  border-white rounded-full object-cover size-150"
           />
         </div>
         <div className=" text-left items-center place-content-start ">
