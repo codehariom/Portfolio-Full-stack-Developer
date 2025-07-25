@@ -7,6 +7,7 @@ import Skills from './page/Skills'
 import Tools from './page/Tools'
 import Footer from './common/Footer'
 import Projects from './page/Project'
+import Contact from './page/Contact'
 
 function App() {
   return (
@@ -17,8 +18,10 @@ function App() {
     <Skills/>
     <Tools/>
     <Projects/>
+    <Contact/>
     <HeroSection/>
-   <Footer/>
+    <Footer/>
+    
 
     </>
     
