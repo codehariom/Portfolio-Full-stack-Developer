@@ -48,7 +48,7 @@ function Navbar({ refs }) {
       }`}
     >
       <div className="flex items-center justify-between px-6 py-4 md:px-20">
-        <h1 className="flex text-2xl text-white font-semibold items-center">
+        <h1 className="flex text-xl md:text-2xl text-white font-semibold items-center">
           <FaAngleLeft size={25} />
           <span className="mx-2">Code.Hariom</span>
           <FaAngleRight size={25} />

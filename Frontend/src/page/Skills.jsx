@@ -13,9 +13,11 @@ function Skills() {
           <ol className="list-disc text-base sm:text-lg text-white pl-5 space-y-2">
             <li>Problem-Solving</li>
             <li>Communication & Time Management</li>
-            <li>Critical Thinking</li>
+            <li>Critical Thinking & Self-Learning </li>
             <li>Teamwork and Collaboration</li>
             <li>Creative Design</li>
+            <li>Debuging Code</li>
+            <li>Attention to Detail </li>
           </ol>
         </div>
 

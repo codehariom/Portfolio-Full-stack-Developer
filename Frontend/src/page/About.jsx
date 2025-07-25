@@ -3,7 +3,7 @@ import AboutImg from "/public/about.jpg";
 
 function About() {
   return (
-    <div className="bg-green w-full px-6 sm:px-10 py-25">
+    <div className="bg-green w-full px-6 sm:px-10  md:py-25">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
         {/* Image Section */}

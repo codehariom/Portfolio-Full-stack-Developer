@@ -9,11 +9,11 @@ function Home() {
       <div className="grid grid-cols-1 place-content-center  md:grid-cols-2 h-full items-center p-6  gap-y-10">
         
         {/* Left Section */}
-        <div className="text-left md:ml-40 md:mt-20 items-center space-y-10">
-          <p className="text-white text-lg md:text-xl font-medium tracking-wide">Hi, I'm</p>
+        <div className="text-left md:ml-40 md:mt-20 items-center space-y-5">
+          <p className="text-white text-xl md:text-xl font-medium tracking-wide">Hi, I'm</p>
           
-          <h1 className="text-2xl md:flex sm:text-3xl md:text-4xl text-white font-bold">
-            Hariom{" "}
+          <h1 className="text-2xl flex md:flex sm:text-3xl md:text-4xl text-white font-bold">
+            Hariom
             <span className="block font-semibold">
               <ReactTyped
                 strings={["-Full Stack Developer", "-Backend Developer"]}
@@ -25,7 +25,7 @@ function Home() {
           </h1>
           
           <p className="text-white text-base sm:text-lg leading-relaxed max-w-md">
-            I'm a passionate <span className="font-bold">MERN</span> Full-Stack Web Developer <br />
+            I'm a passionate <span className="font-bold tracking-wider">MERN</span> Full-Stack Web Developer <br />
             with a knack for turning innovative ideas <br />
             into functional, scalable, and intuitive digital products.
           </p>
