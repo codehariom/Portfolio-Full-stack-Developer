@@ -7,120 +7,98 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // // Log form data and environment variables for debugging
-    // const formData = new FormData(form.current);
-    // for (let [key, value] of formData.entries()) {
-    //   console.log(`${key}: ${value}`);
-    // }
-    // console.log("Service ID:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
-    // console.log("Template ID:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
-    // console.log("Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+    // Validate environment variables
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    // Check if environment variables are defined
-    if (
-      !import.meta.env.VITE_EMAILJS_SERVICE_ID ||
-      !import.meta.env.VITE_EMAILJS_TEMPLATE_ID ||
-      !import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    ) {
-      console.error("Environment variables are missing!");
-      alert("Configuration error. Please contact support.");
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("Missing EmailJS environment variables.");
+      alert("Email configuration error. Please contact support.");
       return;
     }
 
     emailJs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
-        {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-        }
-      )
+      .sendForm(serviceId, templateId, form.current, { publicKey })
       .then(
         () => {
-          alert(
-            "Thank you for joining us! We've sent a welcome email to get you started."
-          );
-          form.current.reset(); // Clear the form after successful submission
+          alert("Thank you for contacting us! We will get back to you soon.");
+          form.current.reset();
         },
         (error) => {
-          console.error("Failed to send email:", error);
+          console.error("Email send failed:", error);
           alert("Oops! Something went wrong. Please try again later.");
         }
       );
   };
 
   return (
-    <div className="h-screen bg-green text-white place-items-center place-content-center">
-      <div className="grid mt-10">
-        <div className="font-semibold justify-center text-center m-10">
-          <h2 className="text-4xl">
-            Contact Us <br /> Get in touch with us
-          </h2>
+    <div className="min-h-screen bg-green text-white flex items-center justify-center px-4 py-10">
+      <div className="w-full max-w-4xl">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl  tracking-wide font-semibold">Contact Us</h2>
+          <p className="text-lg mt-2">Get in touch with us</p>
         </div>
-        <div className="w-fit">
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="py-2">
-              <div className="flex gap-20 w-full">
-                <div className="grid text-xl">
-                  <label className="font-semibold py-2">First Name</label>
-                  <input
-                    type="text"
-                    placeholder="Enter Your First Name"
-                    name="user_firstName"
-                    className="border-1 py-2 px-4 rounded-md outline-offset-4 outline-green"
-                    required
-                  />
-                </div>
-                <div className="grid text-xl">
-                  <label className="font-semibold py-2">Last Name</label>
-                  <input
-                    type="text"
-                    placeholder="Enter Your Last Name"
-                    name="user_lastName"
-                    className="border-1 py-2 px-4 rounded-md outline-offset-4 outline-green"
-                    required
-                  />
-                </div>
-              </div>
+        <form ref={form} onSubmit={sendEmail} className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid text-lg">
+              <label className="font-semibold mb-1">First Name</label>
+              <input
+                type="text"
+                name="user_firstName"
+                placeholder="Enter Your First Name"
+                className="p-3 rounded-md border border-white"
+                required
+              />
             </div>
-            <div className="grid">
-              <div className="grid text-xl">
-                <label className="font-semibold py-2">Email Address</label>
-                <input
-                  type="email"
-                  placeholder="Enter Your Email"
-                  name="user_email"
-                  className="border-1 py-2 px-4 rounded-md outline-offset-4 outline-green"
-                  required
-                />
-              </div>
-              <div className="grid text-xl">
-                <label className="font-semibold py-2">Phone Number</label>
-                <input
-                  type="tel"
-                  placeholder="Enter Your Phone Number"
-                  name="user_phone"
-                  className="border-1 py-2 px-4 rounded-md outline-offset-4 outline-green"
-                />
-              </div>
-              <div className="grid text-xl">
-                <label className="font-semibold py-2">Company Name</label>
-                <input
-                  type="text"
-                  placeholder="Enter Your Company Name"
-                  name="user_message"
-                  className="border-1 py-2 px-4 rounded-md outline-offset-4 outline-green"
-                />
-              </div>
+            <div className="grid text-lg">
+              <label className="font-semibold mb-1">Last Name</label>
+              <input
+                type="text"
+                name="user_lastName"
+                placeholder="Enter Your Last Name"
+                className="p-3 rounded-md border border-white"
+                required
+              />
             </div>
+          </div>
+          <div className="grid text-lg">
+            <label className="font-semibold mb-1">Email Address</label>
             <input
-              type="submit"
-              value="Let's Talk"
-              className="bg-white text-green py-2 px-6 rounded-md outline-2 my-6 outline-white"
+              type="email"
+              name="user_email"
+              placeholder="Enter Your Email"
+              className="p-3 rounded-md border border-white "
+              required
             />
-          </form>
-        </div>
+          </div>
+          <div className="grid text-lg">
+            <label className="font-semibold mb-1">Phone Number</label>
+            <input
+              type="tel"
+              name="user_phone"
+              placeholder="Enter Your Phone Number"
+              className="p-3 rounded-md border border-white "
+            />
+          </div>
+          <div className="grid text-lg">
+            <label className="font-semibold mb-1">Company Name</label>
+            <input
+              type="text"
+              name="user_message"
+              placeholder="Enter Your Company Name"
+              className="p-3 rounded-md border border-white "
+            />
+          </div>
+          <div className="text-center">
+            <button
+              type="submit"
+              className="bg-white w-full text-green font-bold py-3 px-8 rounded-md hover:bg-green-100 transition"
+            >
+              Let's Talk
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );
