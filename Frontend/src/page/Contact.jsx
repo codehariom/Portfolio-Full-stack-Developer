@@ -33,11 +33,11 @@ function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-green text-white flex items-center justify-center px-4 py-10">
+    <div className="min-h-screen bg-green text-white flex items-center justify-center px-4 py-20">
       <div className="w-full max-w-4xl">
         <div className="text-center mb-10">
-          <h2 className="text-4xl  tracking-wide font-semibold">Contact Us</h2>
-          <p className="text-lg mt-2">Get in touch with us</p>
+          <h2 className="text-4xl  tracking-wide font-semibold">Get in touch with us</h2>
+
         </div>
         <form ref={form} onSubmit={sendEmail} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">

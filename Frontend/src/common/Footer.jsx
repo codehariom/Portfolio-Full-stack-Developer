@@ -4,7 +4,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 function Footer() {
   return (
     <footer className="bg-green text-white px-6 py-10">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {/* Brand */}
         <div className="space-y-5">
           <h1 className="flex text-2xl font-semibold items-center">
@@ -41,18 +41,6 @@ function Footer() {
                 Postman API Fundamentals
               </a>
             </li>
-          </ul>
-        </div>
-
-        {/* Menu */}
-        <div className="md:ml-10">
-          <h3 className="text-2xl tracking-wider font-semibold mb-3">Menu</h3>
-          <ul className="list-disc list-inside space-y-1">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
 

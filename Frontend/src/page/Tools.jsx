@@ -27,10 +27,10 @@ import {
 } from "react-icons/vsc";
 
 function Tools() {
-  const iconClass = "p-3 mx-3 rounded-full bg-white";
+  const iconClass = "px-10  rounded-full py-2 mx-3 rounded bg-white";
 
   return (
-    <div className="min-h-screen bg-green px-4 py-10 flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-green px-4 py-15 flex flex-col justify-center items-center">
       <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-10">
         Tools & Technologies I've Used
       </h2>
