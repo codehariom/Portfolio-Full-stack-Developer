@@ -6,10 +6,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 function Home() {
   return (
     <div className="bg-gradient-to-b from-black to-green min-h-screen pt-20 w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 h-full items-center p-6  gap-y-10">
+      <div className="grid grid-cols-1 place-content-center  md:grid-cols-2 h-full items-center p-6  gap-y-10">
         
         {/* Left Section */}
-        <div className="text-left md:ml-10 space-y-5">
+        <div className="text-left md:ml-40 md:mt-20 items-center space-y-10">
           <p className="text-white text-lg md:text-xl font-medium tracking-wide">Hi, I'm</p>
           
           <h1 className="text-2xl md:flex sm:text-3xl md:text-4xl text-white font-bold">

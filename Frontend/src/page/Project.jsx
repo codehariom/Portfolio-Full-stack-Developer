@@ -33,7 +33,7 @@ function Project() {
   ];
 
   return (
-    <div className="min-h-screen bg-green pt-26 px-4">
+    <div className="min-h-screen bg-green pt-36 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl text-white font-bold text-center mb-12">
           Projects Made by Me
