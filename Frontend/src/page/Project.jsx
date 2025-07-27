@@ -43,9 +43,9 @@ function Project() {
           {projectDetails.map((project, index) => (
             <div
               key={index}
-              className="bg-[#059A00] text-white rounded-2xl p-6 w-full max-w-xs flex flex-col justify-between shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-[#059A00] text-white rounded-2xl h-full p-6 w-full max-w-xs flex flex-col justify-between shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="mb-5 space-y-3">
+              <div className="mb-5  space-y-3">
                 <div className="bg-black h-40 rounded-xl flex items-center justify-center p-4">
                   <p className="text-white text-lg font-semibold text-center">
                     {project.title}
