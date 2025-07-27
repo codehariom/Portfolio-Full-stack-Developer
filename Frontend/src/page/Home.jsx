@@ -51,8 +51,8 @@ function Home() {
 
           {/* Button */}
           <div className="mt-8">
-            <a href="#contact">
-              <button className="py-2 px-8 bg-white text-black text-lg rounded-md  outline-2 outline-green hover:bg-green-100 transition-all duration-300">
+            <a href="./public/Hariom-Resume.pdf" download>
+              <button  className="py-2 px-8 bg-white text-black text-lg rounded-md  outline-2 outline-green hover:bg-green-100 transition-all duration-300">
                 Hire me Now
               </button>
             </a>
