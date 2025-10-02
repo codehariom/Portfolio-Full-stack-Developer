@@ -13,7 +13,7 @@ function Footer() {
             <FaAngleRight size={25} />
           </h1>
           <p className="text-xl">
-            Full Stack Web Developer <br /> Backend Dev
+            Full Stack Web Developer <br /> Backend Developer
           </p>
         </div>
 

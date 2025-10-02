@@ -3,33 +3,33 @@ import React from "react";
 function Project() {
   const projectDetails = [
     {
-      title: "URL Shortener with Dashboard",
+      title: "URL Shortener with Dashboard built with MERN (MongoDB, Express, React, Node)",
       discription:
-        "A full-featured URL shortener with analytics dashboard. Built using MERN stack and JWT authentication, users can track clicks and manage links securely.",
-      github: "#",
-      liveLink: "#",
+        "Click-url is a JavaScript-based web application that allows users to shorten long URLs into compact 5-character short links. Built using a modern tech MERN stack, this project provides a responsive front-end and a secure, scalable back-end The site serves as an interactive click URL handler or redirect service, highlighting expertise in building lightweight, responsive web endpoints for user engagement or data tracking purposes, with Dashboard Successfully launched and maintained a live Web project, emphasizing rapid prototyping, version control integration, and reliable online accessibility for portfolio demonstration",
+      github: "https://github.com/codehariom/Click-Url-Full-Stack-Using-Mern",
+      liveLink: "https://clickurl-r72u.onrender.com/",
     },
     {
-      title: "Full-Stack E-commerce with Admin Panel",
+      title: "E-Commerce Web Application built with MERN (MongoDB, Express, React, Node.js)",
       discription:
-        "A modern e-commerce app built with React, Redux, and Node.js. Includes product management, cart system, Stripe payments, and secure login with role-based access.",
-      github: "#",
-      liveLink: "#",
+        "Developed a full-stack online shopping platform enabling user registration, product browsing, cart management, checkout, and order tracking. Utilized JWT-based authentication and protected routes to ensure secure access. Admin panel for managing products (create, read, update, delete), orders, and users with Dashboard Admin dashboard operations (product creation, update) handled in under 0.5 seconds  Integrated Razorpay (or other payment gateway) for secure online payments. mplemented multi-attribute product filtering (category, size, color, material, price range) and search functionality, and Optimized performance and responsive UI using React, Redux, and efficient API calls ",
+      github: "https://github.com/codehariom/E-commerce-Using-MERN",
+      liveLink: "https://e-commerce-using-mern-vygc.onrender.com/",
     },
     {
-      title: "MERN Auth System with OTP",
+      title: "Nodejs + PostgreSQL + Supabase Authentication",
       discription:
-        "Secure authentication system using MERN stack with OTP verification, email confirmation, JWT sessions, and password reset flow.",
-      github: "#",
-      liveLink: "#",
+        "Building a complete authentication system using React (frontend), PostgreSQL (database), and Supabase (backend/auth service). Integration between frontend React and Supabase backend via REST / API calls.. Implementation of JWT (JSON Web Token) for secure token-based authentication. Email verification flow: sending verification links to new users and validating them using Nodemailer Email OTP (One-Time Password) for enhanced security. Security best practices: storing tokens safely, validating inputs, handling errors, and maintaining session state.  Feature like Forgot password and Change password flows: secure reset links/token validation and updating passwords.",
+      github: "https://github.com/codehariom/High-Backend-Auth-Security",
+      liveLink: "https://github.com/codehariom/High-Backend-Auth-Security",
     },
-    {
-      title: "AI-Powered Interview Prep App",
-      discription:
-        "A full-stack app that simulates real-time coding interviews with AI-generated questions and feedback. Built with React, Express, and OpenAI API.",
-      github: "#",
-      liveLink: "#",
-    },
+    // {
+    //   title: "AI-Powered Interview Prep App",
+    //   discription:
+    //     "A full-stack app that simulates real-time coding interviews with AI-generated questions and feedback. Built with React, Express, and OpenAI API.",
+    //   github: "#",
+    //   liveLink: "#",
+    // },
   ];
 
   return (
@@ -39,7 +39,7 @@ function Project() {
           Projects Made by Me
         </h2>
 
-        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center">
+        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center">
           {projectDetails.map((project, index) => (
             <div
               key={index}

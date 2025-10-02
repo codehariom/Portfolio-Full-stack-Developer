@@ -28,19 +28,23 @@ function Skills() {
           </h2>
           <ol className="list-disc text-base sm:text-lg text-white pl-5 space-y-3">
             <li>
-              <strong>Languages:</strong> HTML, CSS, JavaScript, TypeScript, Express.js, Node.js, jQuery, API, SaaS
+              <strong>Languages:</strong> HTML, CSS, JavaScript, ExpressJS, NodeJS, Typescript, SaaS, RestAPI,Git, jQuery
             </li>
             <li>
-              <strong>Frameworks:</strong> React, Tailwind CSS, Socket.io, JWT, Axios, Redux Toolkit
+              <strong>Frameworks:</strong> React, Tailwind, Bootstrap, Socket.io, JWT, Axios, Formik, Shadcn-UI, Material-UI, NPM
             </li>
             <li>
-              <strong>Tools:</strong> NPM, Postman, GraphQL, VS Code, GitHub, Git, Google Analytics, Docker, System Design
+              <strong>Tools:</strong> Postman, GraphQL, Github, GoogleAnalytics, VSCode, Cursor, ClaudeAi, Grok/ChatGPT Google Analytics, Docker
             </li>
             <li>
-              <strong>Databases:</strong> MongoDB, SQL, Redis, AWS, CI/CD
+              <strong>Databases:</strong> SQL, MongoDB, Redis, PostgreSQL, Nginx, AWSDynamoDB, Firebase, SystemDesign
+
             </li>
             <li>
               <strong>UI/UX:</strong> Figma, Adobe XD, Wireframing & Prototyping
+            </li>
+            <li>
+              <strong>CloudTools:</strong> AWS, AWSLambda, Vercel, Docker, CI/CDPipeline, Linux, AWSEC2, AWSRoute53, AWSS3, AWSIAM
             </li>
           </ol>
         </div>

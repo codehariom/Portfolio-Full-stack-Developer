@@ -31,7 +31,6 @@ function App() {
       <div ref={projectsRef}><Projects /></div>
       <HeroSection />
       <div ref={contactRef}><Contact /></div>
-
       <Footer />
     </>
   );
